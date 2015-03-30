@@ -9,7 +9,12 @@
 <!-- in the project's Project Properties dialog box.-->
 <project name="ListReader" default="default" basedir=".">
     <description>Builds, tests, and runs the project ListReader.</description>
+
     <import file="nbproject/build-impl.xml"/>
+<target depends="-pre-init,-init-private,-init-user" name="-init-project">
+<property name="platforms.JDK_1.8.home" value="/usr/lib/jvm/java-8-oracle"/>
+</target>
+
     <!--
 
     There exist several targets which are by default empty and which can be
@@ -70,7 +75,4 @@
     nbproject/build-impl.xml file.
 
     -->
-<target depends="-pre-init,-init-private,-init-user" name="-init-project">
-<property name="platforms.JDK_1.8.home" value="/usr/lib/jvm/java-8-oracle"/>
-</target>
 </project>
