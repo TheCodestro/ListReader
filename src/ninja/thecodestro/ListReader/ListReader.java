@@ -4,7 +4,7 @@
  * copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
  */
 
-package rocks.atkailash.ListReader;
+package ninja.thecodestro.ListReader;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
