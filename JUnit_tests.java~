@@ -1,0 +1,18 @@
+package ninja.thecodestro.ListReader.JUnit;
+
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+@RunWith(ListReader.class)
+public class JUnit_tests() {
+
+@Parameters
+public static Collection<Object[]> data() {
+    Object[][] data = new Object[][] { { "testData1.txt" }, { "otherList2.txt" } };
+    return Arrays.asList(data);
+}
+ @Test
+ public void test_Instantiate(String testList) {
+     ListReader testListR = new ListReader(testList);
+ }
+}

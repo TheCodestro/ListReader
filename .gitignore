@@ -5,6 +5,9 @@
 
 # Package Files #
 *.jar
+!junit*.jar
+!*hamcrest-core*.jar
+
 *.war
 *.ear
 
